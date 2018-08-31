@@ -5,7 +5,7 @@ Server side scripting employs scripts on a web server which produce a response c
 Client side scripting involves embedded scripts, such as JavaScript, that are run client-side in a web browser.
 
 Identify and explain the differences between scripting and programming languages.
-(2 sentances)
+Programming languages need to be compiled before running. Scripting languages do not need to be compiled.
 
 Explain what type of language PHP is.
 PHP is a server-side scripting language. It is also used as a general-purpose programming language.
