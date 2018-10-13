@@ -30,7 +30,7 @@
 
 	<header>
 		<h1> <?php echo $siteName; ?> </h1>
-		<h2>Connecting to our colluges</h2>
+		<h2>Connecting to our colleagues</h2>
 	</header>
 	
 </body>
