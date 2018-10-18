@@ -1,8 +1,7 @@
-<html>
-<body>
+</section>
 
 <footer>
-	<h3>Copyright © 2018 Insights</h3>
+	<h3>Copyright © 2018 <?php echo $companyName; ?></h3>
 </footer>
 
 </body>

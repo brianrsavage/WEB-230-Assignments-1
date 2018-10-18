@@ -1,18 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:200,300');
+
 
 body {
 	background-color: #292727;
 	font-family: 'Barlow Condensed', sans-serif;
-	color: #ededed; 
-	font-size:9pt; 
+	color: #ededed;
+	font-size: 9pt;
 	text-align: center;
-	font-weight: 100; 
-	line-height: 12pt; 
+	font-weight: 100;
+	line-height: 12pt;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+}
+
+#wrapper {
+	position: absolute;
+	width: 80%;
+	top: 7%;
+	left: 10%;
+	background-color: #111;
 }
 
 .copy, section {
@@ -24,14 +33,14 @@ header {
 	background-color: #000;
 	color: #FFF;
 	padding: 7px 10px;
-	font-size: 10pt;	
+	font-size: 10pt;
 }
 
 footer {
 	background-color: #000;
 	color: #FFF;
 	padding: 7px 10px;
-	font-size: 10pt;	
+	font-size: 10pt;
 }
 
 textarea {
@@ -46,43 +55,144 @@ textarea {
 	background-color: #f8f8f8;
 	font-size: 16px;
 	resize: none;
-	
 }
 
-h1 { 
+a {
 	font-family: 'Barlow Condensed', sans-serif;
-	color: #ededed; 
-	font-size:17pt; 
-	font-weight: 100; 
-	line-height: 12pt; 
+	color: #ededed;
+	text-align: left;
+	font-size: 17pt;
+	font-weight: 100;
+	line-height: 12pt;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #1a1a1a;
-	width: 23%;
+	display: inline;
+	text-decoration: none!important;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
-h2 { 
-	font-family:'Barlow Condensed', sans-serif;; 
-	color: #ededed; 
-	font-size: 10pt; 
-	text-align: left;
-	font-weight:normal;
-	line-height: 15pt; 
-	text-transform: uppercase;
-	margin: -15px 0px 0px 12px;
-	padding-bottom: 10px;
+a:hover {
+	color: rgba(237,237,237,0.5);
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
-	
 
-h3 { 
+h1 {
 	font-family: 'Barlow Condensed', sans-serif;
-	color: #ededed; 
-	font-size:8pt; 
+	color: #ededed;
+	text-align: left;
+	font-size: 17pt;
+	font-weight: 100;
+	line-height: 12pt;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: block;
+}
+
+span {
+	font-family: 'Barlow Condensed', sans-serif;
+	color: #ededed;
+	text-align: left;
+	font-size: 12pt;
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+hr {
+	border-bottom: 1px solid #1a1a1a;
+	margin: -12px 0px -2px;
+}
+
+h2 {
+	font-family: 'Barlow Condensed', sans-serif;
+	;
+	color: #ededed;
+	font-size: 10pt;
+	text-align: left;
+	font-weight: normal;
+	line-height: 15pt;
+	text-transform: uppercase;
+	margin: 0px;
+	padding-bottom: 10px;
+	width: auto;
+}
+
+h3 {
+	font-family: 'Barlow Condensed', sans-serif;
+	color: #ededed;
+	font-size: 8pt;
 	text-align: center;
-	font-weight: 100; 
-	line-height: 12pt; 
+	font-weight: 100;
+	line-height: 12pt;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	padding-bottom: 4px;
+}
+
+h4 {
+	font-family: 'Barlow Condensed', sans-serif;
+	;
+	color: #ededed;
+	font-size: 14pt;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0px auto 7px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid rgba(237,237,237,0.5);
+	width: 20%;
+}
+
+nav {
+	position: absolute;
+	display: inline-block;
+	float: right;
+	top: 30px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0px;
+}
+
+nav ul li a {
+	text-align: center;
+	font: normal 5pt small fonts;
+	display: inline-block;
+	position: relative;
+	width: 110px;
+	height: 8px;
+	color: #bdb3af;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 10px;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	background-color: #181616;
+	padding: 10px 10px;
+	font-family: arial;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+	text-align: center;
+	color: #181616;
+	letter-spacing: 2pt;
+	word-spacing: 4pt;
+	transition: all 0.6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-webkit-transition: all .6s ease-in-out;
+	cursor: crosshair;
+	background-color: #bdb3af;
 }

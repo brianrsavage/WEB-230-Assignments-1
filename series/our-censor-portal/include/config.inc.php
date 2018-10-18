@@ -1,16 +1,8 @@
 <?php
-	$user_input = '';
-	$search = 'Acme';
-	$replace = 'Insights';
-	if ( isset( $_POST[ 'user_input' ] ) && !empty( $_POST[ 'user_input' ] ) ) {
-		$user_input = $_POST[ 'user_input' ];
+error_reporting();
+ini_set('error_reporting',E_ALL);
 
-	} else {
-		echo '<br><br> Please fill in the text field.';
-	}
+	$companyName = 'Insights';
+	$siteName = $companyName.' | Communications Portal';
 ?>
 
-
-<?php
-	$user_input_new = str_ireplace( $search, $replace, $user_input );
-?>
