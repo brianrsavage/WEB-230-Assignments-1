@@ -1,7 +1,10 @@
  <?php
-      // 01. Explain what the following if statement is doing.
-      // The if statement is first checking to see if all fields are filled in. If not, text will be echoed to remind the user to fill in the information. If all fields are set, text will be echoed to display the current day, date and year.
-
+      /* 
+          01. Explain what the following if statement is doing.
+          The if statement is first checking to see if all fields are filled in. If not, text will 
+          be echoed to remind the user to fill in the information. If all fields are set, text will be 
+          echoed to display the current day, date and year.
+     */
       if ( isset($_GET['day']) && isset($_GET['date']) && isset($_GET['year']) ) {
         $day = $_GET['day'];
         $date = $_GET['date'];
